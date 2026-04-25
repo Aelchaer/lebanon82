@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+    
+    
+    <head>
+        <meta charset="UTF-8" />
+        <title>Beirut 1980s Archive</title>
+        <style>
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                background-color: white;
+            }
+            .container {
+                display: flex;
+                height: 100vh;
+                width: 100vw;
+            }
+
+            /* Layout Columns */
+            .column {
+                flex: 1;
+                overflow-y: auto;
+                padding: 40px;
+                scrollbar-width: none;
+            }
+            .column::-webkit-scrollbar {
+                display: none;
+            }
+            .image-col {
+                flex: 2;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+    
+            .word-list span {
+                display: flex;
+                align-items: center;
+                height: 120px; /* Vertical spacing for each line */
+                width: 100%;
+                margin-bottom: 20px;
+            }
+.word-list img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px;
+    display: block;
+    object-fit: fixed;
+}
+
+            .arabic-col .word-list span {
+                justify-content: flex-end;
+            }
+            .english-col .word-list span {
+                justify-content: flex-start;
+            }
+
+            /* Hover Image Logic */
+            .hover-image {
+                position: fixed;
+                max-width: 30%;
+                opacity: 0;
+                transition: opacity 0.3s;
+                pointer-events: none;
+            }
+            .hover-image.active {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="column arabic-col" id="col-arabic">
+                <div class="word-list">
+                    <span data-pair="01"><img src="jpg/arabic01.jpg" alt="Arabic 01" /></span>
+                    <span data-pair="02"><img src="jpg/arabic02.jpg" alt="Arabic 02" /></span>
+                    <span data-pair="03"><img src="jpg/arabic03.jpg" alt="Arabic 03" /></span>
+                    <span data-pair="04"><img src="jpg/arabic04.jpg" alt="Arabic 04" /></span>
+                    <span data-pair="05"><img src="jpg/arabic05.jpg" alt="Arabic 05" /></span>
+                    <span data-pair="06"><img src="jpg/arabic06.jpg" alt="Arabic 06" /></span>
+                    <span data-pair="07"><img src="jpg/arabic07.jpg" alt="Arabic 07" /></span>
+                    <span data-pair="08"><img src="jpg/arabic09.jpg" alt="Arabic 08" /></span>
+                    <span data-pair="09"><img src="jpg/arabic09.jpg" alt="Arabic 09" /></span>
+                    <span data-pair="10"><img src="jpg/arabic10.jpg" alt="Arabic 10" /></span>
+                    <span data-pair="11"><img src="jpg/arabic11.jpg" alt="Arabic 11" /></span>
+                    <span data-pair="12"><img src="jpg/arabic12.jpg" alt="Arabic 12" /></span>
+                    <span data-pair="13"><img src="jpg/arabic13.jpg" alt="Arabic 13" /></span>
+                    <span data-pair="14"><img src="jpg/arabic14.jpg" alt="Arabic 14" /></span>
+                    <span data-pair="15"><img src="jpg/arabic15.jpg" alt="Arabic 15" /></span>
+                    <span data-pair="16"><img src="jpg/arabic16.jpg" alt="Arabic 16" /></span>
+                    <span data-pair="17"><img src="jpg/arabic17.jpg" alt="Arabic 17" /></span>
+                    <span data-pair="18"><img src="jpg/arabic18.jpg" alt="Arabic 18" /></span>
+                    <span data-pair="19"><img src="jpg/arabic19.jpg" alt="Arabic 19" /></span>
+                    <span data-pair="20"><img src="jpg/arabic20.jpg" alt="Arabic 20" /></span>
+                    <span data-pair="21"><img src="jpg/arabic21.jpg" alt="Arabic 21" /></span>
+                    <span data-pair="22"><img src="jpg/arabic22.jpg" alt="Arabic 22" /></span>
+                    <span data-pair="23"><img src="jpg/arabic23.jpg" alt="Arabic 23" /></span>
+                </div>
+            </div>
+
+            <div class="column image-col">
+                  <img  
+                      id="img-01"
+                    class="hover-image"
+                    src="Photos/Phone1.gif"
+                          /> 
+                
+                  <img  
+                      id="img-02"
+                    class="hover-image"
+                    src="Photos/Bomb1.gif"
+                          /> 
+                
+                 <img  
+                      id="img-03"
+                    class="hover-image"
+                    src="Photos/Soldiers2.jpeg"
+                          />  
+                
+                 <img  
+                      id="img-04"
+                    class="hover-image"
+                    src="Photos/School.jpg"
+                          />  
+                
+                   <img  
+                      id="img-05"
+                    class="hover-image"
+                    src="Photos/ComeBack.jpg"
+                          /> 
+                
+                 <img  
+                      id="img-06"
+                    class="hover-image"
+                    src="Photos/Lebanon.jpg"
+                          /> 
+                
+                  <img  
+                      id="img-07"
+                    class="hover-image"
+                    src="Photos/Page1.JPG"
+                          /> 
+                
+                  <img  
+                      id="img-08"
+                    class="hover-image"
+                    src="Photos/Page2.JPG"
+                          /> 
+                  <img  
+                      id="img-09"
+                    class="hover-image"
+                    src="Photos/Driving.jpeg"
+                          /> 
+                
+                <img  
+                      id="img-10"
+                    class="hover-image"
+                    src="Photos/Her_Family.jpg"
+                          /> 
+                
+                <img
+                        id="img-11"
+                    class="hover-image"
+                    src="Photos/my_mother.jpeg"
+                   />
+                         <img
+                        id="img-12"
+                    class="hover-image"
+                    src="Photos/Military.gif"
+                   />
+                
+                 <img
+                        id="img-13"
+                    class="hover-image"
+                    src="Photos/Star1.gif"
+                   />
+                
+                 <img
+                        id="img-14"
+                    class="hover-image"
+                    src="Photos/Cemetery.jpg"
+                   />
+                
+                   <img
+                        id="img-15"
+                    class="hover-image"
+                    src="Photos/Baby.jpg"
+                   />
+                
+                <img
+                        id="img-16"
+                    class="hover-image"
+                    src="Photos/Ofc.gif" 
+                   />
+                
+                   <img
+                        id="img-17"
+                    class="hover-image"
+                    src="Photos/Nobody.jpeg" 
+                   />
+                 
+                   <img
+                        id="img-18"
+                    class="hover-image"
+                    src="Photos/Star2.gif"
+                   />
+                
+                   <img
+                        id="img-19"
+                    class="hover-image"
+                    src="Photos/Bomb2.gif"
+                   />
+                
+                 <img
+                        id="img-20"
+                    class="hover-image"
+                    src="Photos/Family.jpg"
+                   />
+                
+                  <img
+                        id="img-21"
+                    class="hover-image"
+                    src="Photos/Apartment.jpg"
+                   />
+                
+                  <img
+                        id="img-22"
+                    class="hover-image"
+                    src="Photos/Together.gif"
+                   />
+                
+                 <img
+                        id="img-23"
+                    class="hover-image"
+                    src="Photos/Beirut.gif"
+                   />
+            </div>
+
+            <div class="column english-col" id="col-english">
+                <div class="word-list">
+                    <span data-pair="01"><img src="jpg/english01.jpg" alt="English 01" /></span>
+                    <span data-pair="02"><img src="jpg/english02.jpg" alt="English 02" /></span>
+                    <span data-pair="03"><img src="jpg/english03.jpg" alt="English 03" /></span>
+                    <span data-pair="04"><img src="jpg/english04.jpg" alt="English 04" /></span>
+                    <span data-pair="05"><img src="jpg/english05.jpg" alt="English 05" /></span>
+                    <span data-pair="06"><img src="jpg/english06.jpg" alt="English 06" /></span>
+                    <span data-pair="07"><img src="jpg/english07.jpg" alt="English 07" /></span>
+                    <span data-pair="08"><img src="jpg/english08.jpg" alt="English 08" /></span>
+                    <span data-pair="09"><img src="jpg/english09.jpg" alt="English 09" /></span>
+                    <span data-pair="10"><img src="jpg/english10.jpg" alt="English 10"></span>
+                    <span data-pair="11"><img src="jpg/english11.jpg" alt="English 11"></span>
+                    <span data-pair="12"><img src="jpg/english12.jpg" alt="English 12"></span>
+                    <span data-pair="13"><img src="jpg/english13.jpg" alt="English 13"></span>
+                    <span data-pair="14"><img src="jpg/english14.jpg" alt="English 14"></span>
+                    <span data-pair="15"><img src="jpg/english15.jpg" alt="English 15"></span>
+                    <span data-pair="16"><img src="jpg/english16.jpg" alt="English 16"></span>
+                    <span data-pair="17"><img src="jpg/english17.jpg" alt="English 17"></span>
+                    <span data-pair="18"><img src="jpg/english18.jpg" alt="English 18"></span>
+                    <span data-pair="19"><img src="jpg/english19.jpg" alt="English 19"></span>
+                    <span data-pair="20"><img src="jpg/english20.jpg" alt="English 20"></span>
+                    <span data-pair="21"><img src="jpg/english21.jpg" alt="English 21"></span>
+                    <span data-pair="22"><img src="jpg/english22.jpg" alt="English 22"></span>
+                    <span data-pair="23"><img src="jpg/english23.jpg" alt="English 23"></span>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const ca = document.getElementById("col-arabic");
+            const ce = document.getElementById("col-english");
+
+            // 1:1 Scroll Sync
+            ca.onscroll = () => {
+                ce.scrollTop = ca.scrollTop;
+            };
+            ce.onscroll = () => {
+                ca.scrollTop = ce.scrollTop;
+            };
+
+            // Hover Interaction
+            document.addEventListener("mouseover", (e) => {
+                const pair = e.target.closest("span[data-pair]");
+                if (pair) {
+                    const id = pair.getAttribute("data-pair");
+                    document.getElementById(`img-${id}`)?.classList.add("active");
+                }
+            });
+
+            document.addEventListener("mouseout", (e) => {
+                if (e.target.closest("span[data-pair]")) {
+                    document.querySelectorAll(".hover-image").forEach((img) => img.classList.remove("active"));
+                }
+            });
+        </script>
+    </body>
+</html>
